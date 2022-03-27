@@ -14,6 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,700;0,900;1,100;1,300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 
 </head>
@@ -34,16 +35,28 @@
              <p class="line">Now send bulk messages on the go!</p>
              <!-- icon -->
             <h2>LOGin</h2>
-            <div class="hover_img">
-                <a href="#">Authenticate Me<span><img src="Screenshot (408).png" alt="image" height="200" /></span></a>
-           </div>
              <input type="email" required id="email" placeholder="Enter Your Email">
              <input type="password" required id="password" placeholder="Enter Password">
-             <button class="button" id="submit-btn">Login</button>
+             <div class="hover_img">
+                <a href="#">Authenticate Me<span><img src="Screenshot (408).png" alt="image" height="150px" /></span></a>
+           </div>
+           <a  href="#popup1"> <button class="button" id="submit-btn">Login</button></a>
+             <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h3>Error!</h3>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <ul class="error-list">
+                            <li class="error-list-item">Check Username or Password</li>
+                            <li class="error-list-item">Authenticate Yourself through this <a href="https://myaccount.google.com/lesssecureapps?pli=1&rapt=AEjHL4Pz8Ns4Idh2nZfOXVJ7lhqtWTcKhk8gt70rapHGua1BQwfpDJe-pBvSV2h38DUonrac7BURKSbLbC6LvkOUx1eT0r3G0Q" target="_blank">link</a></li>
+                        </ul>
+                    </div>
+                </div>
              <p class="forgot">Forgot Password</p>
             <!-- icon -->
-       </div>
+            </div>
     </div>
-    <p class="copy">&copy; Copyright 2022</p>
+   
+
 </body>
 </html>

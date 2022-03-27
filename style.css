@@ -7,6 +7,7 @@
 }
 body{
     background-color: #f7f5e6;
+    transition: .4s ease-in;
 }
 .container{
     width: 100vw;
@@ -67,6 +68,11 @@ body{
     outline: none;
      border: 0; 
      cursor: pointer;
+     cursor: pointer;
+     transition: .3s ease-in-out;
+}
+.btn:active{
+    transform: scale(0.9);
 }
 .login-box{
     width: 45%;
@@ -77,7 +83,7 @@ border: 0;
 outline: 0;
 padding: 2em 1em;
 border-radius: 22px;
-box-shadow: 1px 10px 10px 5px #888888; #333a56;
+box-shadow: 1px 10px 10px 5px #888888;
 }
 .login-box h2{
     margin-top: 1em;
@@ -110,6 +116,10 @@ box-shadow: 1px 10px 10px 5px #888888; #333a56;
     margin: 1em 0;
     font-size: 1rem;
     cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.button:active{
+    transform: scale(0.9);
 }
 .forgot{
     font-size: .8rem;
@@ -137,15 +147,16 @@ box-shadow: 1px 10px 10px 5px #888888; #333a56;
     text-decoration: none;
     color: steelblue;
     font-weight: 900;
-
 }
 .hover_img a span {
-     position:absolute;
+     position:absolute; 
       display:none; 
       z-index:99;
+
      }
 .hover_img a:hover span {
      display:block; 
+ 
     }
 
 input:active,
@@ -165,3 +176,49 @@ and (max-width : 680px) {
       margin-top: 2em;
   }
 }
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup h3 {
+    margin: 10px;
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+  }
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: rgb(245, 187, 187);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    color: #333;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.5s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
